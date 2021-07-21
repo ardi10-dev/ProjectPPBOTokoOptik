@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fcafeab4-e9aa-4cb6-bb32-ea3e24c32ece">
+	<property name="ireport.zoom" value="1.771561000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select* from transaksi]]>
+	</queryString>
+	<field name="id_transaksi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenisFram" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hargaFrame" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenisLensa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hargaLensa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2eb25fa8-2971-4896-b59f-40a1c855a63b" x="331" y="0" width="170" height="20"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Toko Optik Amanah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="19f18cc6-29d5-433b-aa84-a85030ce15b3" x="368" y="28" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[jl.Nuri no.30]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="17d40e76-e717-45c7-aade-37b41883d15a" x="41" y="41" width="60" height="20"/>
+				<textElement/>
+				<text><![CDATA[Id Transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17d40e76-e717-45c7-aade-37b41883d15a" x="101" y="41" width="137" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tanggal/jam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17d40e76-e717-45c7-aade-37b41883d15a" x="238" y="41" width="101" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nama ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17d40e76-e717-45c7-aade-37b41883d15a" x="339" y="41" width="75" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jenis Frame]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17d40e76-e717-45c7-aade-37b41883d15a" x="414" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Harga Frame]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17d40e76-e717-45c7-aade-37b41883d15a" x="514" y="41" width="81" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jenis Lensa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17d40e76-e717-45c7-aade-37b41883d15a" x="674" y="41" width="128" height="20"/>
+				<textElement/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17d40e76-e717-45c7-aade-37b41883d15a" x="595" y="41" width="79" height="20"/>
+				<textElement/>
+				<text><![CDATA[Harga Lensa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="05173e33-d4f7-48d2-8016-c349a2965b06" x="41" y="0" width="139" height="20"/>
+				<textElement/>
+				<text><![CDATA[Laporan Mingguan Penjualan ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="93d2ff9e-94a8-4811-84c1-b3dd15810354" x="0" y="41" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="ebd4dda6-41e2-4ea8-b62e-92ef5d241811" x="41" y="0" width="60" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{id_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ebd4dda6-41e2-4ea8-b62e-92ef5d241811" x="101" y="0" width="137" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ebd4dda6-41e2-4ea8-b62e-92ef5d241811" x="238" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ebd4dda6-41e2-4ea8-b62e-92ef5d241811" x="339" y="0" width="75" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{jenisFram}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ebd4dda6-41e2-4ea8-b62e-92ef5d241811" x="414" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{hargaFrame}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ebd4dda6-41e2-4ea8-b62e-92ef5d241811" x="514" y="0" width="81" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{jenisLensa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ebd4dda6-41e2-4ea8-b62e-92ef5d241811" x="595" y="0" width="79" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{hargaLensa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ebd4dda6-41e2-4ea8-b62e-92ef5d241811" x="674" y="0" width="128" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ecd2ea31-f3ce-4c48-be1e-30f9b9010a3a" x="0" y="0" width="41" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="1" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
